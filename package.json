@@ -1,0 +1,24 @@
+{
+  "name": "playwright-mambo-jambo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn playwright test",
+    "test:open": "yarn playwright test --ui",
+    "test:a11y": "yarn playwright test --grep a11y --project chromium",
+    "test:visual": "yarn playwright test --grep visual",
+    "test:debug": "yarn playwright test --grep debug --project Desktop-Chrome",
+    "report": "yarn playwright show-report"
+  },
+  "keywords": [],
+  "author": "richard.zevel <richard.zevel@actumdigital.com>",
+  "license": "",
+  "description": "",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.47.1",
+    "@types/node": "^22.5.5",
+    "prettier": "^3.3.3"
+  },
+  "packageManager": "yarn@4.5.0"
+}

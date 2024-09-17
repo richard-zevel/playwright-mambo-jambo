@@ -1,0 +1,13 @@
+# This is a reference .yarnrc.yml file to use as a template.
+# You will need to save it without the --TEMPLATE suffix and generate a valid token.
+# See README file for more information about generating the token.
+
+compressionLevel: mixed
+
+enableGlobalCache: false
+
+nodeLinker: node-modules
+
+checksumBehavior: "update"
+
+yarnPath: .yarn/releases/yarn-4.5.0.cjs
