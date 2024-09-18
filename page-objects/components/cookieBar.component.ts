@@ -4,7 +4,7 @@ export default class CookieBar {
   // Element Locators
   readonly locators = {
     container: '.ch2-dialog.ch2-dialog-bottom.ch2-visible',
-    acceptButton: `.ch2-btn-primary`,
+    acceptButton: `.ch2-dialog.ch2-dialog-bottom.ch2-visible .ch2-btn-primary`,
     declineButton: '.cookie-bar__decline',
   }
 
@@ -18,7 +18,7 @@ export default class CookieBar {
   constructor(page: Page) {
     this.page = page
     this.container = page.locator(this.locators.container)
-    this.acceptButton = page.locator(this.locators.container).locator(this.locators.acceptButton)
+    this.acceptButton = page.locator(this.locators.acceptButton)
     this.declineButton = page.locator(this.locators.declineButton)
   }
 
